@@ -9,3 +9,4 @@ gpg --keyserver keyserver.ubuntu.com --recv-key DCC9EFBF77E11517
 gpg -a --export DCC9EFBF77E11517 | sudo apt-key add -
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install snapd -y
+sudo snap install --classic code
