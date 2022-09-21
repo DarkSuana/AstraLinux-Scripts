@@ -14,3 +14,5 @@ sudo echo -e "Pin-Priority: 900" | sudo tee -a /etc/apt/preferences.d/aldpro
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install vim -y
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp
+sudo apt-get install --fix-missing
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp
