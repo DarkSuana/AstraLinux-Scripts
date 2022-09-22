@@ -1,7 +1,7 @@
 hostnamectl set-hostname test
 apt-get update && apt-get upgrade -y
 apt-get install openssh-server ca-certificates curl gnupg lsb-release -y
-echo -e "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
+echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 systemctl restart ssh
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
