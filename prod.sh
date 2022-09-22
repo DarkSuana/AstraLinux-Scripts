@@ -1,10 +1,10 @@
 hostnamectl set-hostname prod
 apt-get update && apt-get upgrade -y
 apt-get install iptables openssh-server ca-certificates curl gnupg lsb-release -y
-echo -e "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
+echo "PermitRootLogin yes" | tee -a /etc/ssh/sshd_config
 systemctl restart ssh
 echo "post-up iptables -t nat -A POSTROUTING -o enp1s0 -j MASQUERADE" | tee -a /etc/network/interfaces
-echo -e "net.ipv4.ip_forward=1" | tee -a /etc/syctl.conf
+echo "net.ipv4.ip_forward=1" | tee -a /etc/syctl.conf
 sysctl -p
 systemctl restart networking
 curl -fsSL https://get.docker.com -o get-docker.sh
