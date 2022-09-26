@@ -1,5 +1,4 @@
 #!/bin/bash
-#https://drive.google.com/drive/folders/1gt_NM79jnDxNvb7uR3wViGZ6e_ccsvWW
 sudo astra-modeswitch set 2
 sudo apt-get install ca-certificates apt-transport-https
 sudo echo -e "deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/repository-base 1.7_x86-64 main non-free contrib" | sudo tee -a /etc/apt/sources.list
