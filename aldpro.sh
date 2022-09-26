@@ -1,8 +1,12 @@
 #!/bin/bash
-echo "Enter domain: $DOMAIN"
-echo "Enter name of DC: $DC"
-echo "Enter password: $PASS"
-echo "Enter local ip of your DC: $IP"
+echo "Enter domain: "
+read $DOMAIN
+echo "Enter name of DC: "
+read $DC
+echo "Enter password: "
+read $PASS
+echo "Enter local ip of your DC: "
+read $IP
 sudo astra-modeswitch set 2
 sudo apt-get install ca-certificates apt-transport-https vim -y
 sudo echo -e "deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/repository-base 1.7_x86-64 main non-free contrib" | sudo tee -a /etc/apt/sources.list
