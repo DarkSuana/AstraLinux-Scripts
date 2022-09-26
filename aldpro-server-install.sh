@@ -1,5 +1,6 @@
 #!/bin/bash
 #This script install ALDPro. Version 1.0.0
+#Use only hardnerd core, not generic!!! 
 echo "Enter domain: "
 read $DOMAIN
 echo "Enter name of DC: "
