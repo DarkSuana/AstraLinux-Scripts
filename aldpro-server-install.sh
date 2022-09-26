@@ -9,7 +9,7 @@ read $PASS
 echo "Enter local ip of your DC: "
 read $IP
 sudo astra-modeswitch set 2
-sudo apt-get install ca-certificates apt-transport-https vim -y
+sudo apt-get install ca-certificates apt-transport-https vim curl-y
 sudo echo -e "deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/repository-base 1.7_x86-64 main non-free contrib" | sudo tee -a /etc/apt/sources.list
 sudo echo -e "deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/repository-extended 1.7_x86-64 main contrib non-free" | sudo tee -a /etc/apt/sources.list
 sudo apt-get update && sudo apt-get upgrade -y
