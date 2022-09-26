@@ -1,3 +1,5 @@
+#!/bin/bash
+#This script installing Snap Store (snapd)
 sudo apt-get install debian-archive-keyring
 sudo apt-get install gpg
 echo -e "deb [trusted=yes] https://mirror.yandex.ru/debian/ buster main contrib non-free" | sudo tee -a /etc/apt/sources.list
