@@ -1,5 +1,5 @@
 #!/bin/bash
-#This script install ALDPro. Version 1.0.0
+#This script installs ALDPro. Version 1.0.0
 #Use only hardnerd core, not generic!!! 
 #Use only static address
 sudo astra-modeswitch set 2
