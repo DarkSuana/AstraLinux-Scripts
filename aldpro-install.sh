@@ -6,7 +6,7 @@ echo -e "deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/reposit
 sudo apt-get update && sudo apt-get upgrade -y
 apt-get install vim curl wget -y
 echo -e "deb https://download.astralinux.ru/aldpro/stable/repository-main/ 1.0.0 main" | sudo tee -a /etc/apt/sources.list.d/aldpro.list
-echo-e "deb https://download.astralinux.ru/aldpro/stable/repository-extended/ generic main" | sudo tee -a /etc/apt/sources.list.d/aldpro.list
+echo -e "deb https://download.astralinux.ru/aldpro/stable/repository-extended/ generic main" | sudo tee -a /etc/apt/sources.list.d/aldpro.list
 sudo touch /etc/apt/preferences.d/aldpro
 echo -e "Package: *" | sudo tee -a /etc/apt/preferences.d/aldpro
 echo -e "Pin: release n=generic" | sudo tee -a /etc/apt/preferences.d/aldpro
