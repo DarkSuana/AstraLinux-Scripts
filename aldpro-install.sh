@@ -3,7 +3,7 @@
 # Use only hardned core!
 # Use FQDN to your hostname (like dc1.test.local)
 # Change in /etc/hosts 127.0.1.1 on your FQDN name with short name
-# Add in /etc/resolve.conf domain, search and your ip like nameserver 
+# Add in /etc/resolv.conf domain, search and your ip like nameserver 
 echo -e "Enter domain>> "
 read $DOMAIN
 echo -e "Enter ip>> "
