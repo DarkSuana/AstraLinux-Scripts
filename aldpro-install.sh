@@ -4,6 +4,14 @@
 # Use FQDN to your hostname (like dc1.test.local)
 # Change in /etc/hosts 127.0.1.1 on your FQDN name with short name
 # Add in /etc/resolve.conf domain, search and your ip like nameserver 
+echo -e "Enter domain>> "
+read $DOMAIN
+echo -e "Enter ip>> "
+read $IP
+echo -e "Enter your hostname"
+read $HOSTNAME
+echo -e "Enter password>> "
+read $PASSWD
 astra-modeswitch set 2
 apt-get install ca-certificates apt-transport-https -y
 echo -e "deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/repository-base 1.7_x86-64 main non-free contrib" | sudo tee -a /etc/apt/sources.list
@@ -18,3 +26,4 @@ echo -e "Pin: release n=generic" | sudo tee -a /etc/apt/preferences.d/aldpro
 echo -e "Pin-Priority: 900" | sudo tee -a /etc/apt/preferences.d/aldpro
 sudo apt-get update && sudo apt-get upgrade -y
 DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp
+/opt/rbta/aldpro/mp/bin/aldpro-server-install.sh -d $DOMAIN -n $HOSTNAME -p $PASSWD --ip $IP --no-reboot
