@@ -1,5 +1,6 @@
 #!/bin/bash
 # Use only ifupdown, not NetworkManager
+# Use only hardnerd core!
 # Use FQDN to your hostname (like dc1.test.local)
 # Change in /etc/hosts 127.0.1.1 on your FQDN name with short name
 astra-modeswitch set 2
