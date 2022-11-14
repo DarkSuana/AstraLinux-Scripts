@@ -26,4 +26,4 @@ echo -e "Pin: release n=generic" | sudo tee -a /etc/apt/preferences.d/aldpro
 echo -e "Pin-Priority: 900" | sudo tee -a /etc/apt/preferences.d/aldpro
 sudo apt-get update && sudo apt-get upgrade -y
 DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp
-/opt/rbta/aldpro/mp/bin/aldpro-server-install.sh -d $DOMAIN -n $HOSTNAME -p $PASSWD --ip $IP --no-reboot
+/opt/rbta/aldpro/mp/bin/aldpro-server-install.sh -d $DOMAIN -n $HOST -p $PASSWD --ip $IP --no-reboot
