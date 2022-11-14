@@ -9,7 +9,7 @@ read $DOMAIN
 echo -e "Enter ip>> "
 read $IP
 echo -e "Enter your hostname"
-read $HOSTNAME
+read $HOST
 echo -e "Enter password>> "
 read $PASSWD
 astra-modeswitch set 2
