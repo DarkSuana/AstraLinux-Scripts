@@ -1,8 +1,9 @@
 #!/bin/bash
 # Use only ifupdown, not NetworkManager
-# Use only hardnerd core!
+# Use only hardned core!
 # Use FQDN to your hostname (like dc1.test.local)
 # Change in /etc/hosts 127.0.1.1 on your FQDN name with short name
+# Add in /etc/resolve.conf domain, search and your ip like nameserver 
 astra-modeswitch set 2
 apt-get install ca-certificates apt-transport-https -y
 echo -e "deb http://download.astralinux.ru/astra/frozen/1.7_x86-64/1.7.1/repository-base 1.7_x86-64 main non-free contrib" | sudo tee -a /etc/apt/sources.list
