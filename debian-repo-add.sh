@@ -8,3 +8,4 @@ gpg --keyserver keyserver.ubuntu.com --recv-key 0E98404D386FA1D9
 gpg -a --export 0E98404D386FA1D9 | sudo apt-key add -
 gpg --keyserver keyserver.ubuntu.com --recv-key DCC9EFBF77E11517
 gpg -a --export DCC9EFBF77E11517 | sudo apt-key add -
+apt-get update 
