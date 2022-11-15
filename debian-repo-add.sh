@@ -1,7 +1,6 @@
 #!/bin/bash
 #This script adds Debian repositories
-sudo apt-get install debian-archive-keyring
-sudo apt-get install gpg
+apt-get install debian-archive-keyring gpg ca-certificates apt-transport-https
 echo -e "deb [trusted=yes] https://mirror.yandex.ru/debian/ buster main contrib non-free" | sudo tee -a /etc/apt/sources.list
 gpg --keyserver keyserver.ubuntu.com --recv-key 648ACFD622F3D138
 gpg -a --export 648ACFD622F3D138 | sudo apt-key add -
